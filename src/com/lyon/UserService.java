@@ -28,13 +28,13 @@ public class UserService {
     }
 
     public boolean hasStaticFile(String file) {
-        if (new File(STATIC + "html" + File.separator + file).isFile()) {
+        if (new File(STATIC + File.separator +"html" + File.separator + file).isFile()) {
             return true;
-        } else if (new File(STATIC + "js" + File.separator + file).isFile()) {
+        } else if (new File(STATIC + File.separator + "js" + File.separator + file).isFile()) {
             return true;
-        } else if (new File(STATIC + "css" + File.separator + file).isFile()) {
+        } else if (new File(STATIC + File.separator + "css" + File.separator + file).isFile()) {
             return true;
-        } else if (new File(STATIC + "images" + File.separator + file).isFile()) {
+        } else if (new File(STATIC + File.separator + "images" + File.separator + file).isFile()) {
             return true;
         } else {
             return false;
