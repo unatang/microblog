@@ -16,25 +16,25 @@ public class UserService {
     }
 
     public String getHtml(String html) {
-        return readFile(STATIC + "html" + File.separator + html);
+        return readFile(STATIC + File.separator +"html" + File.separator + html);
     }
 
     public String getCss(String css) {
-        return readFile(STATIC + "css" + File.separator + css);
+        return readFile(STATIC + File.separator + "css" + File.separator + css);
     }
 
     public String getJs(String js) {
-        return readFile(STATIC + "js" + File.separator + js);
+        return readFile(STATIC + File.separator + "js" + File.separator + js);
     }
 
     public boolean hasStaticFile(String file) {
-        if (new File(STATIC + File.separator +"html" + File.separator + file).isFile()) {
+        if (new File(STATIC + File.pathSeparator +"html" + File.separator + file).isFile()) {
             return true;
-        } else if (new File(STATIC + File.separator + "js" + File.separator + file).isFile()) {
+        } else if (new File(STATIC + File.pathSeparator + "js" + File.separator + file).isFile()) {
             return true;
-        } else if (new File(STATIC + File.separator + "css" + File.separator + file).isFile()) {
+        } else if (new File(STATIC + File.pathSeparator + "css" + File.separator + file).isFile()) {
             return true;
-        } else if (new File(STATIC + File.separator + "images" + File.separator + file).isFile()) {
+        } else if (new File(STATIC + File.pathSeparator + "images" + File.separator + file).isFile()) {
             return true;
         } else {
             return false;
