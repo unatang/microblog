@@ -1,0 +1,32 @@
+form {
+    font-size: 1.5em;
+    padding: 50px 0;
+}
+form div {
+    width: 600px;
+    text-align: right;
+    overflow: hidden;
+}
+div p {
+    width: 400px;
+    float: right;
+    padding-left: 50px;
+    text-align: left;
+}
+input {
+    border: 1px solid #000;
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+form button{
+    width: 200px;
+    height: 50px;
+    background-color: #3784c6;
+    color: white;
+    position: relative;
+    left: 320px;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
